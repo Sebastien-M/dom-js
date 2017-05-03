@@ -32,13 +32,16 @@
     </section>
     <script>
         let form = document.querySelector("form");
-        form.addEventListener("submit", function(e) {
+        form.addEventListener("submit", function (e) {
             // get `input` from the `form
-
+            let nom = document.querySelectorAll("#firstname");
+            let prenom = document.querySelectorAll("#secondname");
+            let email = document.querySelectorAll("#mail");
+            
             // display `input` content into the console
-
+            console.log("Nom :" + nom.textContent + "Prénom :"+ prenom.textContent + "Mail" + email.textContent;
             // put `input` values into `#fill_me`
-
+            let textfill = document.querySelectorAll("#fill_me");
             // DO NOT REMOVE...
             e.preventDefault();
         })
