@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Subscribe to Simplon.co</h1>
+    <form method="POST" action="#">
+        <fieldset>
+            <label for="firstname">first name:</label>
+            <input id="firstname" type="text">
+        </fieldset>
+
+        <fieldset>
+            <label for="secondname">second name:</label>
+            <input id="secondname" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="mail">mail:</label>
+            <input id="mail" type="mail">
+        </fieldset>
+        <input type="submit">
+    </form>
+    <section>
+        <h1>Welcome</h1>
+        <p id="fill_me"></p>
+    </section>
+    <script>
+        let form = document.querySelector("form");
+        form.addEventListener("submit", function(e) {
+            // get `input` from the `form
+
+            // display `input` content into the console
+
+            // put `input` values into `#fill_me`
+
+            // DO NOT REMOVE...
+            e.preventDefault();
+        })
+    </script>
+</body>
+
+</html>

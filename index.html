@@ -58,6 +58,7 @@
         magni pariatur, maxime placeat ratione, sapiente exercitationem tenetur modi consequuntur suscipit odio! Ex suscipit, voluptates dolor perspiciatis nihil aut sunt maxime?
     </p>
     <script>
+<<<<<<< HEAD
 
         //Version 1
         
@@ -79,6 +80,27 @@
             //console.log(h1s[a]);
         }
         */
+=======
+        // example 1: display children
+        let children = document.body.children;
+        for (let i = 0; i < children.length; i = i + 1) {
+            console.log(children[i]);
+        }
+        // example 2: change child content
+        children[0].textContent = "dominique";
+
+        // example 3: change h1 to uppercase
+        for (let i = 0; i < children.length - 1; i = i + 2) {
+            let maj = children[i].textContent.toUpperCase();
+            children[i].textContent = maj;
+        }
+
+        // example 4: change h1 to lower case
+        let titles = document.querySelectorAll("h1");
+        for (let i = 0; i < titles.length; i = i + 1) {
+            titles[i].textContent = "hi from js " + i;
+        }
+>>>>>>> upstream/master
     </script>
 </body>
 
